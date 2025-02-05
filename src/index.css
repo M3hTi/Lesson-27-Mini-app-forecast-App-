@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+.margin-4{
+  margin: 4px;
+}
+.margin-6{
+  margin: 6px;
+}
+.margin-8{
+  margin: 8px;
+}
+.margin-12{
+  margin: 12px
+}
+.margin-16{
+  margin: 16px
+}
+.margin-24{
+  margin: 24px;
+}
+.margin-32{
+  margin: 32px;
+}
+.padding-4{
+  padding: 4px;
+}
+.padding-6{
+  padding: 6px;
+}
+.padding-8{
+  padding: 8px;
+}
+.padding-12{
+  padding: 12px
+}
+.padding-16{
+  padding: 16px
+}
+.padding-24{
+  padding: 24px;
+}
+.padding-32{
+  padding: 32px;
+}
