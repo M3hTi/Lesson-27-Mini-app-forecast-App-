@@ -3,8 +3,6 @@ import axios from 'axios'
 
 import './App.css'
 
-const apiKey = '3eb8b7903c2740898db112352250502'
-
 function reducer(state,action){
   switch (action.type) {
     case 'LOADING':
@@ -52,7 +50,7 @@ function App() {
 
     dispatchWeatherData({type: 'LOADING'})
     axios
-      .get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${confirmSearch}`)
+      .get(`https://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_WEATHER_API_KEY}&q=${confirmSearch}`)
       .then(response => {
         if(response.status !== 200) throw new Error("status is not ok!");
         dispatchWeatherData({type: 'LOADED', payload: response.data})
