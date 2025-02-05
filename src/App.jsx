@@ -103,7 +103,7 @@ function SearchForm({value, onInputHandler, onSearch}) {
   return(
     <form className='padding-32' onSubmit={onSearch} >
       <input type="text" className='padding-6' placeholder='Please enter the city name' value={value} onChange={onInputHandler}/>
-      <button type='submit' className='padding-8 submit'>Search</button>
+      <button type='submit' className='padding-8 submit' disabled={!value}>Search</button>
     </form>
   )
 }
