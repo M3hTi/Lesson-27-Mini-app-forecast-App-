@@ -101,9 +101,22 @@ function Header({isDark, onToggle}) {
 
 function SearchForm({value, onInputHandler, onSearch}) {
   return(
-    <form className='padding-32' onSubmit={onSearch} >
-      <input type="text" className='padding-6' placeholder='Please enter the city name' value={value} onChange={onInputHandler}/>
-      <button type='submit' className='padding-8 submit' disabled={!value}>Search</button>
+    <form onSubmit={onSearch}>
+      <input 
+        type="text" 
+        placeholder='Enter city name...'
+        value={value} 
+        onChange={onInputHandler}
+        aria-label="Search for a city"
+      />
+      <button 
+        type='submit' 
+        className='submit'
+        disabled={!value}
+        aria-label="Search weather"
+      >
+        Search
+      </button>
     </form>
   )
 }
