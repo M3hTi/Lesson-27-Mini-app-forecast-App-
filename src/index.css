@@ -45,6 +45,9 @@ body {
 .margin-32{
   margin: 32px;
 }
+.margin-48{
+  margin: 48px;
+}
 .padding-4{
   padding: 4px;
 }
@@ -65,4 +68,7 @@ body {
 }
 .padding-32{
   padding: 32px;
+}
+.padding-48{
+  padding: 48px;
 }
