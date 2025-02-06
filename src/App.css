@@ -249,6 +249,11 @@ form input::placeholder {
   background: #444;
 }
 
+.error{
+  color: red;
+  font-weight: bold;
+}
+
 @media (max-width: 640px) {
   form {
     flex-direction: column;

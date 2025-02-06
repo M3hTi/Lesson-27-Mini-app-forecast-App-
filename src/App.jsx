@@ -67,7 +67,7 @@ function App() {
     <div className={isDark ? 'dark-mode' : 'light-mode'}>
       <Header isDark={isDark} onToggle={toggle} />
       <SearchForm value={searchTerm} onInputHandler={inputHandler} onSearch={searchHandler}/>
-      {weatherData.isError && <p>Something  Wrong</p>}
+      {weatherData.isError && <div className='forecast'><p className='error'>Something  Wrong</p></div>}
       {weatherData.isLoading ? (
         <div className="three col">
           <div className="loader" id="loader-2">
